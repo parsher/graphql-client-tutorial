@@ -18,16 +18,16 @@ export interface IMoviesData {
 
 
 export interface ILogin {
-    ID: string;
+    email: string;
     passwordHash: string;
   }
   
   export interface IUser {
     id: number;
     name: string;
-    ID: string;
+    email: string;
     passwordHash: string;
-    role: string[];
+    roles: string[];
     token: string;
   }
   
@@ -36,7 +36,7 @@ export interface ILogin {
   }
   
   export interface ILoginVars {
-    ID: string;
+    email: string;
     password: string;
   }
   
@@ -50,7 +50,7 @@ export interface ILogin {
   
   export interface ISignupVars {
     name: string;
-    ID: string;
+    email: string;
     password: string;
   }
   

@@ -14,7 +14,7 @@ function Navigation() {
       {user ? (
         <>
           <Link to="/logout">로그아웃</Link>{" "}
-          <Link to={`/@${user.ID}`}>내 정보</Link>
+          <Link to={`/@${user.email}`}>내 정보</Link>
         </>
       ) : (
         <>
